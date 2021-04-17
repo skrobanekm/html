@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
@@ -13,9 +14,28 @@
         <main>
             <h2>Obrázky v HTML</h2>
             <figure>
-                <img src="img/Božka.jpg" alt="Božena Němcová">
+                <img src="img/alpy.jpg" height="300" alt="Božena Němcová">
+                <figcaption>Výhled na Alpy</figcaption>
             </figure>
             <h2>Audio v HTML</h2>
+            <figure>
+                <video width="320" height="240" controls>
+                    <source src="media/movie.mp4" type="video/mp4">
+                    Váš prohlížeč bohužel tento formát nepodporuje.
+                </video> 
+                <figcaption>Medvěd</figcaption>
+            </figure>
+            <figure>
+                <audio controls>
+                    <source src="media/02 Média.mp3" type="audio/mpeg">
+                    Váš prohlížeč bohužel tento formát nepodporuje.
+                </audio>
+                <figcaption>Dymytry - Z médií</figcaption>
+            </figure>
+            <h2>Video z YouTube</h2>
+            <figure>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0rAHrHd2lcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </figure>
         </main>
     
     </body>

@@ -10,7 +10,9 @@ table {
 dt{
     font-weight: 600;
     font-size: 1.2em;
+    text-align: center;
 }
 dd{
     font-style: italic;
+    text-align: center;
 }
