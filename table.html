@@ -1,49 +1,82 @@
 <!DOCTYPE html>
-<html lang="cs">    <head>
-        <title>Tabulky v HTML</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-         <header>
-             <h1>Tabulky v HTML</h1>
-         </header>
-         <main>
-             <h2>Slavná osobnost: </h2>
-             <table border=1>
-                 <caption>Vizitka slavné osobnosti</caption>
-                 <thead>
-                     <tr>
-                         <th>Portrét</th>
-                         <th colspan="2">Základní údaje</th>
-                         <th>Významné činy</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     <tr>
-                         <td rowspan="3"><img src="img/Božka.jpg" height="200" alt="Božena Němcová"></td>
-                         <td colspan="2">Jméno a přímení: Božena Němcová</td>
-                         <td rowspan="4">Díla</td>
-                     </tr>
-                     <tr>
-                         <td>Narození: 4. února 1820</td>
-                         <td>Úmrtí: 21. ledna 1862</td>
-                     </tr>
-                     <tr>
-                         <td rowspan="2" colspan="2">Stručná charakteristika: </td>
-                     </tr>
-                     <tr>
-                         <td>Popisek fotky</td>
-                     </tr>
-                 </tbody>
-                 <tfoot>
-                     <tr>
-                         <td colspan="4">Odkaz na wikipedii: <a href="https://cs.wikipedia.org/wiki/Bo%C5%BEena_N%C4%9Bmcov%C3%A1" target="new">wikipedia.org/wiki/Božena_Němcová</a> </td>
-                    </tr>
-                 </tfoot>
-             </table>
-         </main>
-         <footer></footer>
-    </body>
+<html lang="cs">
+
+<head>
+    <title>Tabulky v HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tabulky v HTML</h1>
+    </header>
+    <main>
+        <h2>Slavná osobnost: Božena Němcová</h2>
+        <table>
+            <caption>Vizitka slavné osobnosti</caption>
+            <thead>
+                <tr>
+                    <th class="zahlaví">Portrét</th>
+                    <th colspan="2" class="zahlaví">Základní údaje</th>
+                    <th class="zahlaví">Významné činy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3"><img src="img/Božka.jpg" height="200" alt="Božena Němcová"></td>
+                    <td colspan="2"> <b>Božena Němcová</b> </td>
+                    <td rowspan="4" class="bok">
+                        <p>Babička</p>
+                        <p>Divá Bára</p>
+                        <p>Pohádky</p>
+                        <p>V zámku a v podzámčí</p>
+                        <p>Pohádky a pověsti</p>
+                        <p>Národní báchorky a pověsti</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Narození: 4. února 1820</td>
+                    <td>Úmrtí: 21. ledna 1862</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2" class="stred">Stručná charakteristika: <p>Božena Němcová, rodným jménem Barbora
+                            Novotná, později Barbora Panklová byla česká spisovatelka národního obrození.</p>
+                        <p>Vzdělání, zejména německé, získala v letech 1830–1833 ve Chvalkovicích, svůj český pravopis
+                            zdokonalovala až v dospělosti, během prvního pobytu v Praze. Je spojována s emancipačními
+                            snahami ženskými i národními. Svým působením si vydobyla pozici české národní patronky a
+                            pomyslné strážkyně národní identity.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Spisovatelka Božena Němcová</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="spod">Odkaz na wikipedii: <a
+                            href="https://cs.wikipedia.org/wiki/Bo%C5%BEena_N%C4%9Bmcov%C3%A1"
+                            target="new">wikipedia.org/wiki/Božena_Němcová</a> </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Značky a atributy tabulky</h2>
+        <dl>
+            <dt>colspan</dt>
+            <dd>Atribut zajišťující rozpětí přes několik sloupců</dd>
+            <dt>rowspan</dt>
+            <dd>Atribut zajišťující rozpětí přes několik řádků</dd>
+            <dt> table </dt>
+            <dd>Značka ohraničující celou tabulku</dd>
+            <dt>thead</dt>
+            <dd>Záhlaví tabulky</dd>
+        </dl>
+
+    </main>
+    <footer></footer>
+</body>
+
 </html>
