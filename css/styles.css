@@ -3,6 +3,7 @@ body {
 }
 h1 {
     background-color:darkgreen;
+    background-image: linear-gradient(to bottom right, darkgreen, yellow);
     text-align: center;
     padding: 10px;
 }
@@ -11,10 +12,12 @@ main {
     margin: auto auto;
     padding: 20px;
     border: 10px solid darkgreen;
+    background-color: #eee;
 }
 h2{
     text-align: center;
     background-color:rgb(6, 145, 41);
+    background-image: linear-gradient(to bottom right, rgb(6, 145, 41), yellow);
 
 }
 .zahlaví {
@@ -32,3 +35,31 @@ h2{
 figure {
     text-align: center;
 }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
